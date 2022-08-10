@@ -1,11 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Create Back Merge PRs'
+description: 'Create automated PRs to back-merge changes to branches based on supplied base branch pattern'
+author: 'Scanny Mascarenhas'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  base_branch_pattern:
+    description: 'The pattern of the base branch'
+  compare_branch:
+    description: 'Compare branch'
 runs:
   using: 'node16'
   main: 'dist/index.js'
