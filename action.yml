@@ -1,11 +1,14 @@
 name: 'Create Back Merge PRs'
 description: 'Create automated PRs to back-merge changes to branches based on supplied base branch pattern'
 author: 'Scanny Mascarenhas'
-# inputs:
-#   base_branch_pattern:
-#     description: 'The pattern of the base branch'
-#   compare_branch:
-#     description: 'Compare branch'
+inputs:
+  # base_branch_pattern:
+  #   description: 'The pattern of the base branch'
+  # compare_branch:
+  #   description: 'Compare branch'
+  access_token:
+    description: 'Access token'
+    required: true
 runs:
   using: 'node16'
   main: 'dist/index.js'
